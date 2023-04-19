@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="首页.css">
+    <link rel="stylesheet" type="text/css" href="首页_banner.css">
+    <link rel="stylesheet" type="text/css" href="新闻动态.css">
+    <title>法润田亩</title>
+</head>
+<body>
+    <!-- 头部区域开始 -->
+    <div class="header w">
+        <!-- 第一行logo -->
+        <div class="logo">
+            <img src="images/logo2.png" alt="">
+        </div>
+        <!-- 第一行导航栏 -->
+        <div class="nav w">
+            <ul class="homepage">
+                <li> <a href="#">首页</a> </li>
+                <li> <a href="#" onclick="sign()">登录</a></li>
+                <li> <a href="#" onclick="sign()">注册</a></li>
+                <li> <a href="#">动态</a></li>
+                <li> <a href="我的.html" onclick="mine">我的</a></li>
+            </ul>
+        </div>
+        <!-- 第一行搜索框 -->
+        <div class="search">
+            <input type="text" value="输入关键词">
+            <img class="buttow" src="images/sousuo(1)/sousuo (1).png" alt="">
+        </div>
+    </div>
+    <!--头部区域结束-->
+
+    <!--banner部分开始-->
+    <div id="root1" class="banner">
+        <ul id="list" class="list">
+            <!-- 轮播的banner -->
+            <li><img src="images/banners/1.jpg" alt=""></li>
+            <li><img src="images/pictures/shouyexinwen/1.jpg" alt=""></li>
+            <li><img src="images/pictures/shouyexinwen/2.jpg" alt=""></li>
+            <li><img src="images/pictures/shouyexinwen/3.jpg" alt=""></li>
+        </ul>
+        <ol class="circles" id="circles_ol">
+        <!-- 小圆点-->
+            <li data-n="0" class="current"></li>
+            <li data-n="1"></li>
+            <li data-n="2"></li>
+            <li data-n="3"></li>
+        </ol>
+        <a href="javascript:;" class="left_btn" id="left_btn"><</a>
+        <a href="javascript:;" class="right_btn" id="right_btn">></a>
+    </div>
+
+    <!--菜单面板开始-->
+    <section class="zhongjian">
+        <div>
+            <ul>
+                <a href="便捷服务.html" onclick="abcd"><li><img src="images/icon/fuwu2.png">
+                    <p>便捷服务</p>
+                </li></a>
+                <li><img src="images/icon/anli.png" alt="">
+                    <p>典型案例</p>
+                </li>
+                <li><img src="images/icon/jixiaofenxifuwuzhiyin1.png" alt="">
+                    <p>办事指南</p>
+                </li>
+                <li><img src="images/icon/wenshuziliao.png" alt="">
+                    <p>文书模板</p>
+                </li>
+                <li><img src="images/icon/shouye.png" alt="">
+                    <p>联系我们</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--菜单面板结束-->
+
+    <!--新闻动态开始-->
+    <div class="box_v">
+    <div class="box-hd  clearfix">
+        <h3>新闻动态</h3>
+    </div>
+
+    <div class="box-a">
+        <div class="box-1">
+            <ul>
+                <li>
+                    <img src="images\pictures\xinwendongtai\1.png" alt="这里是第一场图片"></img>
+                    <h2>走进唐窑村实地调研</h2>
+                </li>
+                <li>
+                    <img src="images\pictures\xinwendongtai\2.png" alt="这里是第二张图片"></img>
+                    <h2>唐窑村村干部法律援助主题专访</h2>
+                </li>
+                <li>
+                    <img src="images\pictures\xinwendongtai\3.png" alt="这里是第三张图片"></img>
+                    <h2>唐窑村第一期法律讲座</h2>
+                </li>
+                <li>
+                    <img src="images\pictures\xinwendongtai\4.png" alt="这里是第一场图片"></img>
+                    <h2>唐窑村第二期法律讲座</h2>
+                </li>
+                <li>
+                    <img src="images\pictures\xinwendongtai\5.jpg" alt="这里是第一场图片"></img>
+                    <h2>唐窑村第三期法律讲座</h2>
+                </li>
+            </ul>
+        </div>
+        <div class="box-2">
+            <ul>
+                
+            </ul>
+        </div>
+        <div class="box-3">
+            <span class="prev"> < </span>
+            <span class="next"> > </span>
+        </div>
+    </div>
+    </div>
+    <!--新闻动态结束-->
+
+    <!--法律科普开始-->
+    <div class="falvkepu">
+        <div class="box-c">
+            <h3>法律科普</h3>
+        </div>
+        <ul>
+            <li>
+                <img src="images\pictures\falvkepu\1.png" alt="">
+            </li>
+
+            <li>
+                <img src="images\pictures\falvkepu\2.png" alt="">
+            </li>
+
+            <li>
+                <img src="images\pictures\falvkepu\3.png" alt="">
+            </li>
+
+            <li>
+                <img src="images\pictures\falvkepu\4.png" alt="">
+            </li>
+        </ul>
+    </div>
+    <!--法律科普结束-->
+
+    <!-- 底部模块开始 -->
+    <div class="footer">
+        <div class="w">
+            <div class="copyright">
+                <img src="images/logo2.png" alt="">
+                <p>
+                    法润田亩致力于农村法律振兴
+                    <br>互联网技术与法律服务有机结合
+                    <br>
+                    <p id="b1">© 2023年 太原科技大学 大学生创业训练项目</p>
+                </p>
+            </div>
+            <div class="links">
+                <dl>
+                    <dt>法润田亩</dt>
+                    <dd> <a href="#">关于 </a> </dd>
+                    <dd> <a href="#">030023</a> </dd>
+                    <dd> <a href="#">山西省太原市</a> </dd>
+                    <dd> <a href="#">客户服务</a> </dd>
+                    <dd> <a href="#">帮助 </a> </dd>
+                </dl>
+                
+            </div>
+        </div>
+    </div>
+    <!-- 底部模块结束 -->
+
+    <!--头部菜单跳转页面-->
+    <script>
+        function sign() {
+            window.location.href="注册登录页.html";
+        }
+    </script>
+
+    <script>
+        function mine(){
+            window.location.href="我的.html";
+        }
+    </script>
+
+    <!--便捷服务-->
+    <script>
+        function abcd() {
+            window.location.href="便捷服务.html";
+        }
+    </script>
+</body>
+<!--banner轮播图script-->
+<script>
+    const root1 = document.getElementById('root1');
+    const left_btn = document.getElementById('left_btn');
+    const right_btn = document.getElementById('right_btn');
+    
+    const list = document.getElementById('list');
+    const circles_ol = document.getElementById('circles_ol');
+    const circles_li = circles_ol.getElementsByTagName('li');
+    // 克隆第一个li
+    const clone_list = list.firstElementChild.cloneNode(true);
+    list.appendChild(clone_list);
+    var idx = 0;
+    //设置函数节流
+    var lock = true;
+    // 右按钮
+    right_btn.onclick = right_btn_handler;
+    //有按钮的事件处理函数
+    function right_btn_handler() {
+        //点击右按钮判断节流锁状态
+        if (!lock) return;
+        // 关锁
+        lock = false;
+        // 加上过渡
+        list.style.transition = 'transform .5s ease 0s';
+        idx++;
+        list.style.transform = 'translateX(' + -20 * idx + '%)';
+        //判断当前图片是否时最后一张，是则就瞬间变为第一张
+        if (idx > 3) {
+            setTimeout(() => {
+                //去掉过度
+                list.style.transition = 'none'
+                    // 删除transform属性
+                list.style.transform = 'none'
+                idx = 0;
+            }, 500);
+
+        }
+        //设置小圆点
+        rds();
+        //开锁
+        setTimeout(() => {
+            lock = true;
+        }, 500);
+
+    };
+    // 左按钮
+    left_btn.onclick = function() {
+        //点击左按钮判断节流锁状态
+        if (!lock) return;
+        // 关锁
+        lock = false;
+        if (idx == 0) {
+            //去掉过度
+            list.style.transition = 'none'
+                //当此时为第一张图时，瞬间变为最后一张图
+            list.style.transform = 'translateX(' + -20 * 4 + '%)';
+            idx = 3;
+            // 让瞬间移动过后，再把过渡加上
+            setTimeout(() => {
+                // 加上过渡
+                list.style.transition = 'transform .5s ease 0s';
+                //动画
+                list.style.transform = 'translateX(' + -20 * 3 + '%)';
+
+            }, 0);
+        } else {
+            idx--;
+            list.style.transform = 'translateX(' + -20 * idx + '%)';
+
+        }
+        //设置小圆点
+        rds();
+        //开锁
+        setTimeout(() => {
+            lock = true;
+        }, 500);
+    };
+
+    //遍历小圆点，当li上的data-n属性的序号等于idx时，给这个li加上类名current
+    const rds = () => {
+        // 遍历ol里面的li，序号为idx的小圆点才会有类名
+        for (var i = 0; i < 4; i++) {
+            if (i == idx % 4) {
+                circles_li[i].className = 'current';
+            } else {
+                circles_li[i].className = '';
+            }
+        }
+    };
+    // 监听小圆点，事件委托
+    circles_ol.onclick = function(e) {
+            // 得到li身上的data-n编号
+            var n = Number(e.target.getAttribute('data-n'));
+            //改变idx的值
+            idx = n;
+            // 点击小圆点进行拉动
+            list.style.transform = 'translateX(' + -20 * idx + '%)';
+            //点击小圆点调用函数
+            rds();
+        }
+        //设置定时器，自动轮播banner
+    var timer = setInterval(() => {
+        right_btn_handler();
+    }, 2000);
+    //鼠标进入轮播图，停止自动轮播
+    root1.onmouseenter = function() {
+        // 清除定时器
+        clearInterval(timer);
+    };
+    //鼠标离开轮播图，停止自动轮播
+    root1.onmouseleave = function() {
+            // 设表先关
+            clearInterval(timer);
+            // 设置定时器，这里不需要加var
+            timer = setInterval(() => {
+                right_btn_handler();
+            }, 1500);
+        }
+        //给按钮添加事件
+        //鼠标进入时，按钮透明度为0.8
+    left_btn.onmouseenter = function() {
+        left_btn.style.opacity = '0.8';
+    };
+    right_btn.onmouseenter = function() {
+        right_btn.style.opacity = '0.8';
+    };
+    //鼠标离开时，按钮透明度变回0.2
+    left_btn.onmouseleave = function() {
+        left_btn.style.opacity = '0.2';
+    };
+    right_btn.onmouseleave = function() {
+        right_btn.style.opacity = '0.2';
+    }
+</script>
+
+<!--新闻动态script-->
+<script>
+    window.onload = function(){
+function $(param){
+    if(arguments[1] == true){
+        return document.querySelectorAll(param);
+    }else{
+        return document.querySelector(param);
+    }
+}
+var $box = $(".box-a");
+var $box1 = $(".box-1 ul li",true);
+var $box2 = $(".box-2 ul");
+var $box3 = $(".box-3");
+var $length = $box1.length;
+
+var str = "";
+for(var i =0;i<$length;i++){
+    if(i==0){
+        str +="<li class='on'>"+(i+1)+"</li>";
+    }else{
+        str += "<li>"+(i+1)+"</li>";
+    }
+}
+$box2.innerHTML = str;
+
+var current = 0;
+
+var timer;
+timer = setInterval(go,1000);
+function go(){
+    for(var j =0;j<$length;j++){
+        $box1[j].style.display = "none";
+        $box2.children[j].className = "";
+    }
+    if($length == current){
+        current = 0;
+    }
+    $box1[current].style.display = "block";
+    $box2.children[current].className = "on";
+    current++;
+}
+
+for(var k=0;k<$length;k++){
+    $box1[k].onmouseover = function(){
+        clearInterval(timer);
+    }
+    $box1[k].onmouseout = function(){
+        timer = setInterval(go,1000);
+    }
+}
+for(var p=0;p<$box3.children.length;p++){
+    $box3.children[p].onmouseover = function(){
+        clearInterval(timer);
+    };
+    $box3.children[p].onmouseout = function(){
+        timer = setInterval(go,1000);
+    }
+}
+
+for(var u =0;u<$length;u++){
+    $box2.children[u].index  = u;
+    $box2.children[u].onmouseover = function(){
+        clearInterval(timer);
+        for(var j=0;j<$length;j++){
+            $box1[j].style.display = "none";
+            $box2.children[j].className = "";
+        }
+        this.className = "on";
+        $box1[this.index].style.display = "block";
+        current = this.index +1;
+    }
+    $box2.children[u].onmouseout = function(){
+        timer = setInterval(go,1000);
+    }
+}
+
+$box3.children[0].onclick = function(){
+    back();
+}
+$box3.children[1].onclick = function(){
+    go();
+}
+function back(){
+    for(var j =0;j<$length;j++){
+        $box1[j].style.display = "none";
+        $box2.children[j].className = "";
+    }
+    if(current == 0){
+        current = $length;
+    }
+    $box1[current-1].style.display = "block";
+    $box2.children[current-1].className = "on";
+    current--;
+}
+}
+</script>
+</html>
+

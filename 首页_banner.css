@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* banner区域 */
+
+.banner {
+    width: 100%;
+    /* 溢出隐藏 */
+    overflow: hidden;
+    /* translateX中的百分数表示相对于它本身宽度的多少倍 */
+    /* transform: translateX(-20%); */
+    position: relative;
+}
+/* ul */
+
+.list {
+    list-style: none;
+    width: 500%;
+    transition: transform .5s ease 0s;
+}
+
+.list li {
+    float: left;
+    width: 20%;
+}
+
+.list li img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    /* height: 750px; */
+    vertical-align: middle;
+}
+/* 按钮 */
+
+.banner #left_btn,#right_btn {
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    width: 30px;
+    height: 60px;
+    line-height: 60px;
+    top: 50%;
+    margin-top: -30px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    opacity: 0.4;
+    border-radius: 30px;
+}
+
+
+.banner>.left_btn {
+    left: 30px;
+}
+
+.banner>.right_btn {
+    right: 30px;
+}
+/* 小圆点 */
+
+.banner .circles {
+    width: 130px;
+    height: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -65px;
+    list-style: none;
+}
+
+.banner .circles li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(243, 249, 248);
+    margin-right: 10px;
+    border-radius: 10px;
+    transition: all .5s ease 0s;
+    cursor: pointer;
+}
+
+.banner .circles .current {
+    width: 40px;
+    background-color: rgb(179, 181, 180);
+}
+
+.banner>.circles li:last-child {
+    margin-right: 0px;
+}
